@@ -3,16 +3,16 @@ from functions.get_files_info import get_files_info
 
 def main(): 
     printing_debug("current")
-    get_files_info("calculator", ".")
+    print(get_files_info("calculator", "."))
 
     printing_debug("pkg")
-    get_files_info("calculator", "pkg")
+    print(get_files_info("calculator", "pkg"))
 
     printing_debug("/bin")
-    get_files_info("calculator", "/bin")
-    
+    print(get_files_info("calculator", "/bin"))
+
     printing_debug("../")
-    get_files_info("calculator", "../")
+    print(get_files_info("calculator", "../"))
     
 def printing_debug(target: str): 
     print(f"Result for {target} directory:\n")
